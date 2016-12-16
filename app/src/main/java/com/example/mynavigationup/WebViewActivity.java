@@ -25,4 +25,13 @@ public class WebViewActivity extends AppCompatActivity {
         mWebView.loadUrl("https://www.google.co.jp");
     }
 
+    @Override
+    public void onBackPressed() {
+        if(mWebView.canGoBack()) {
+            mWebView.goBack();
+            return;
+        }
+        super.onBackPressed();
+    }
+
 }
