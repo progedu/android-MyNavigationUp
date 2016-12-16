@@ -11,8 +11,17 @@
     tools:context="com.example.mynavigationup.GrandchildActivity">
 
     <TextView
+        android:id="@+id/grandchild_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Grandchild Activity" />
+
+    <Button
+        android:layout_below="@+id/grandchild_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Move WevView"
+        android:onClick="moveWebView"
+        />
 
 </RelativeLayout>

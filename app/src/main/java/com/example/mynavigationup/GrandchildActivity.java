@@ -13,4 +13,8 @@ public class GrandchildActivity extends AppCompatActivity {
         setContentView(R.layout.activity_grandchild);
     }
 
+    public void moveWebView(View view) {
+        startActivity(new Intent(this, WebViewActivity.class));
+    }
+
 }
