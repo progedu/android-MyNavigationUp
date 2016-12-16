@@ -15,8 +15,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ChildActivity" />
-        <activity android:name=".GrandchildActivity"></activity>
+        <activity android:name=".ChildActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mynavigationup.MainActivity" />
+        </activity>
+        <activity android:name=".GrandchildActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mynavigationup.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
